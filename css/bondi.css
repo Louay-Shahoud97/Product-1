@@ -1,0 +1,210 @@
+:root {
+  --main--color: #19283f;
+  --second--color: #33d1cc;
+  --third-color: #dfdf0b;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  /* height: 10000px; */
+}
+.main-btn {
+  background-color: red;
+  color: yellow;
+}
+.main-btn:hover {
+  background-color: red;
+  color: yellow;
+}
+
+.navbar {
+  background-color: var(--main--color);
+}
+.navbar img {
+  width: 80px;
+}
+.navbar .navbar-nav .nav-link {
+  color: white;
+}
+
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:hover {
+  color: green;
+}
+.navbar .search {
+  color: white;
+  padding: 0 1rem;
+  border-left: 1px solid var(--second--color);
+}
+.navbar button {
+  color: white;
+  font-size: 25px;
+}
+.navbar button:focus {
+  box-shadow: none;
+}
+.navbar button[aria-expanded="true"] {
+  border: 1px solid red;
+  outline: none;
+}
+
+/* Start Landing */
+.landing {
+  height: calc(100vh - 72px);
+  background-color: var(--main--color);
+}
+/* .landing .text-center {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} */
+/* End Landing */
+
+/* Start Features */
+
+.main-title::before {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  width: 260px;
+  height: 3px;
+  background-color: var(--second--color);
+  transform: translateX(-50%);
+}
+
+.main-title .reem {
+  color: var(--third-color);
+  font-size: 80px;
+}
+
+/* End features */
+
+/* Start Feat  */
+.feat {
+}
+.feat .icon-holder {
+  height: 200px;
+}
+.feat .icon-holder svg {
+  left: 50%;
+  transform: translateX(-50%);
+}
+.features {
+}
+.feat .icon-holder .number {
+  font-size: 10rem;
+  color: #666;
+}
+.feat .icon-holder .icon {
+  color: var(--third-color);
+  font-size: 2rem;
+}
+.feat h4 {
+  color: var(--second--color);
+}
+/* End Feat  */
+
+/* Start Our Work */
+.our-work {
+  background-color: #666;
+}
+.our-work ul li {
+  padding: 10px;
+  cursor: pointer;
+}
+.our-work ul li:hover {
+  background-color: var(--second--color);
+  border-radius: 4px;
+  transition: 0.5s;
+}
+.our-work ul li.active {
+  background-color: var(--second--color);
+  border-radius: 4px;
+}
+.our-work .box {
+  position: relative;
+  overflow: hidden;
+  padding: 5px;
+}
+.our-work .box::before {
+  content: attr(data-work);
+  position: absolute;
+  text-align: center;
+  background-color: #33d1cc48;
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+  font-weight: 800;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  transition: 0.3s;
+  transform: translateX(calc(-100% - 5px));
+}
+.our-work .box:hover.box::before {
+  transform: translateX(0);
+}
+/* End Our Work */
+
+/* Start Stuff */
+.stuff .description {
+  max-width: 450px;
+  margin: auto;
+}
+/* End Stuff */
+
+/* Start Team */
+.team {
+  background-color: #88888894;
+}
+.team h2 {
+  color: var(--third-color);
+}
+.team h4 {
+  background-color: var(--main--color);
+  color: white;
+}
+.row .box .noor {
+  width: 400px;
+  height: 300px;
+}
+/* End Team */
+
+/* Start Subscribe */
+.subscribe {
+  background-color: var(--third-color);
+}
+.subscribe input[type="email"] {
+  border: none;
+  border-bottom: 1px solid white;
+}
+.subscribe input[type="email"]:focus {
+  outline: none;
+}
+.subscribe input[type="email"]::placeholder {
+  color: white;
+}
+.subscribe input[type="submit"] {
+  background-color: var(--main--color);
+  color: var(--third-color);
+}
+/* End Subscribe */
+
+/* Start Footer  */
+.footer {
+  background-color: var(--main--color);
+}
+.footer img {
+  width: 150px;
+}
+.footer .copyright > span {
+  color: var(--second--color);
+}
+.footer .copyright div span {
+  color: var(--third-color);
+}
+
+/* End Footer  */
